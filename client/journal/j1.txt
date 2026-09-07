@@ -3,9 +3,9 @@ Work Done
 We worked on the initial frontend development of our project. TeamUp is a platform designed to
 help students find teammates for projects and hackathons. We first planned the basic structure of the website and decided what information should be
 displayed on the main dashboard. We then created the basic HTML structure and used CSS to design
-the webpage. The following features were added to the frontend:  TeamUp logo and navigation sidebar Dashboard section
-Search bar for finding projects  Recommended projects section
-Project cards containing project names, skills and number of members  My Projects section
+the webpage. The following features were added to the frontend:TeamUp logo and navigation sidebar Dashboard section
+Search bar for finding projects Recommended projects section
+Project cards containing project names, skills and number of members My Projects section
 Progress indicators for projects  User profile and skills section
 Responsive layout for different screen sizes
 At this stage, the project is a static frontend, so the project information is currently added manually
