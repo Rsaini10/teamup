@@ -1,0 +1,207 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  color: #1a1a2e;
+}
+
+.app { min-height: 100vh; }
+
+.header {
+  text-align: center;
+  padding: 48px 20px 32px;
+  background: #1a1a2e;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #a0a0b8;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+}
+
+@media (max-width: 800px) {
+  .container { grid-template-columns: 1fr; }
+}
+
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+  border: 1px solid #e5e7eb;
+}
+
+.form-card h2 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #fafafa;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background: white;
+}
+
+.form-card textarea { min-height: 90px; resize: vertical; }
+
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.form-card button:hover { background: #4338ca; }
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.filter-bar button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #4b5563;
+  transition: 0.15s;
+}
+
+.filter-bar button:hover { border-color: #4f46e5; color: #4f46e5; }
+
+.filter-bar button.active {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: white;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+.badge {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge.find-teammate { background: #dcfce7; color: #15803d; }
+.badge.find-team { background: #dbeafe; color: #1d4ed8; }
+
+.card h3 { color: #1a1a2e; font-size: 1.05rem; font-weight: 600; }
+.card .desc { color: #6b7280; font-size: 0.88rem; line-height: 1.4; }
+.card .skills { font-size: 0.82rem; color: #4f46e5; font-weight: 500; }
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.delete-btn:hover { background: #fee2e2; }
+
+.empty {
+  color: #9ca3af;
+  text-align: center;
+  grid-column: 1/-1;
+  padding: 40px 0;
+}
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #fafafa;
+  color: #1a1a2e;
+  transition: border-color 0.15s, background 0.15s;
+}
