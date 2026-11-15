@@ -4,6 +4,7 @@ const Listing = require('../models/Listing');
 // Get all listings (optionally filter by type)
 
 router.get('/', async (req, res) => {
+  
   try {
     const filter = req.query.type ? { type: req.query.type } : {};
     const listings = await Listing.find(filter).sort({ createdAt: -1 });
