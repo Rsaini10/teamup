@@ -53,7 +53,7 @@ router.get('/:projectId', async (req, res) => {
 
     // 5. Send data to Python ML service
     const response = await axios.post(
-      'http://127.0.0.1:8000/recommend',
+      new URL('/recommend', process.env.ML_SERVICE_URL).toString(),
       requestData
     );
 
