@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Listing = require('../models/Listing');
-juhiu uh 89 89
 // Get all listings (optionally filter by type)
 router.get('/', async (req, res) => {
   try {

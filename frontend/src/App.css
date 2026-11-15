@@ -205,3 +205,79 @@ body {
   color: #1a1a2e;
   transition: border-color 0.15s, background 0.15s;
 }
+
+/* Recommendation Section */
+
+.recommendation-section {
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.recommend-btn {
+  width: 100%;
+  padding: 11px;
+  background: #334155;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recommend-btn:hover {
+  background: #1e293b;
+}
+
+.recommend-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.recommendation-results {
+  margin-top: 15px;
+}
+
+.recommendation-results > h4 {
+  margin-bottom: 12px;
+}
+
+.student-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-header h4 {
+  margin: 0;
+}
+
+.match-score {
+  background: #dcfce7;
+  color: #166534;
+  padding: 5px 9px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.student-card p {
+  font-size: 13px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.recommend-error {
+  color: #dc2626;
+  font-size: 13px;
+}
