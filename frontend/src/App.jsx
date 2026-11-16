@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_URL = '/api/listings';
-const RECOMMENDATION_URL = '/api/recommendations';
+const API_URL = 'http://localhost:5000/api/listings';
+const RECOMMENDATION_URL = 'http://localhost:5000/api/recommendations';
 
 function App() {
   const [listings, setListings] = useState([]);
